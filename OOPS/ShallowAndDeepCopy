@@ -1,0 +1,12 @@
+shallow copy mai refrences pass kiye jate hai, changes reflect hote hai
+
+int a = b;
+this is like passing a refrence same memory allocation to both the variables
+Student(Student s1){
+    
+}
+
+
+Deep copy m changes reflects mahi hote hai
+yahan pr alag alag memory locations hote hai 
+like 
