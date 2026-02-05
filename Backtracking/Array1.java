@@ -12,8 +12,8 @@ public class Array1 {
             return;
         }
         arr[i] = i + 1;
-        array(n, i + 1, arr);
-        arr[i] = arr[i] - 2;
+        array(n, i + 1, arr); // recursion
+        arr[i] = arr[i] - 2; // backtracking
     }
 
     public static void main(String[] args) {
