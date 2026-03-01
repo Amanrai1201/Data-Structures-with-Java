@@ -19,6 +19,8 @@ covering concepts from basics to advanced levels.
 ### 📌 1. Basics
 - Time & Space Complexity
 - Recursion
+- Backtracking
+- ArrayList
 - Mathematical Problems
 
 ### 📌 2. Arrays
