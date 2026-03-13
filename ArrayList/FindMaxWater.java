@@ -17,8 +17,29 @@ public class FindMaxWater {
         return area;
     }
 
+    // using 2 pointer // optimal approch
+    public static int max(int[] height) {
+        int rp = (height.length) - 1;
+        int lp = 0;
+        int area = 0;
+        while (rp >= lp) {
+            int h = Math.min(height[lp], height[rp]);
+            int w = rp - lp;
+            int Curr_Area = h * w;
+            area = Math.max(Curr_Area, area);
+
+            if (height[lp] >= height[rp]) {
+                rp--;
+            } else {
+                lp++;
+            }
+        }
+
+        return area;
+    }
+
     public static void main(String[] args) {
         int[] height = { 1, 8, 2, 4, 5, 6, 8 };
-        System.out.println(maxArea(height));
+        System.out.println(max(height));
     }
 }
